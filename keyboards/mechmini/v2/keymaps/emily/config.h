@@ -7,7 +7,7 @@
 #define TAPPING_TERM 175
 
 #ifdef BACKLIGHT_ENABLE
-  #define BACKLIGHT_BREATHING 
+  #define BACKLIGHT_BREATHING
 #endif
 
 #endif
