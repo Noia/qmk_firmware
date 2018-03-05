@@ -15,8 +15,8 @@ extern keymap_config_t keymap_config;
 #define FN1 LT(_FN1, KC_QUOT)
 #define FN2 MO(_FN2)
 #define S___P__A__C___E KC_SPC
+#define DERP CTL_T(KC_LPRN)
 
-//_______________
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
