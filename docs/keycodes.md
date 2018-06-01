@@ -284,6 +284,22 @@ This is a reference only. Each group of keys links to the page documenting their
 |`RGB_MODE_XMAS`    |`RGB_M_X` |Christmas animation mode                                            |
 |`RGB_MODE_GRADIENT`|`RGB_M_G` |Static gradient animation mode                                      |
 
+## [RGB Matrix Lighting](feature_rgb_matrix.md)
+
+|Key                |Aliases   |Description                                                         |
+|-------------------|----------|--------------------------------------------------------------------|
+|`RGB_TOG`          |          |Toggle RGB lighting on or off                                       |
+|`RGB_MODE_FORWARD` |`RGB_MOD` |Cycle through modes, reverse direction when Shift is held           |
+|`RGB_MODE_REVERSE` |`RGB_RMOD`|Cycle through modes in reverse, forward direction when Shift is held|
+|`RGB_HUI`          |          |Increase hue                                                        |
+|`RGB_HUD`          |          |Decrease hue                                                        |
+|`RGB_SAI`          |          |Increase saturation                                                 |
+|`RGB_SAD`          |          |Decrease saturation                                                 |
+|`RGB_VAI`          |          |Increase value (brightness)                                         |
+|`RGB_VAD`          |          |Decrease value (brightness)                                         |
+|`RGB_SPI`          |          |Increase effect speed (does no support eeprom yet)                  |
+|`RGB_SPD`          |          |Decrease effect speed (does no support eeprom yet)                  |
+
 ## [Thermal Printer](feature_thermal_printer.md)
 
 |Key        |Description                             |
@@ -368,14 +384,15 @@ This is a reference only. Each group of keys links to the page documenting their
 
 ## [Switching and Toggling Layers](feature_advanced_keycodes.md#switching-and-toggling-layers)
 
-|Key            |Description                                                                       |
-|---------------|----------------------------------------------------------------------------------|
-|`LT(layer, kc)`|Turn on `layer` when held, `kc` when tapped                                       |
-|`TO(layer)`    |Turn on `layer` when pressed                                                      |
-|`MO(layer)`    |Momentarily turn on `layer` when pressed (requires `KC_TRNS` on destination layer)|
-|`DF(layer)`    |Set the base (default) layer                                                      |
-|`TG(layer)`    |Toggle `layer` on or off                                                          |
-|`TT(layer)`    |Tap toggle? idk FIXME                                                             |
+|Key             |Description                                                                       |
+|----------------|----------------------------------------------------------------------------------|
+|`LT(layer, kc)` |Turn on `layer` when held, `kc` when tapped                                       |
+|`TO(layer)`     |Turn on `layer` when pressed                                                      |
+|`MO(layer)`     |Momentarily turn on `layer` when pressed (requires `KC_TRNS` on destination layer)|
+|`DF(layer)`     |Set the base (default) layer                                                      |
+|`TG(layer)`     |Toggle `layer` on or off                                                          |
+|`TT(layer)`     |Normally acts like MO unless it's tapped multiple times, which toggles `layer` on |
+|`LM(layer, mod)`|Momentarily turn on `layer` (like MO) with `mod` active as well.                  |
 
 ## [One Shot Keys](quantum_keycodes.md#one-shot-keys)
 
