@@ -9,14 +9,13 @@ extern keymap_config_t keymap_config;
 #define KC_ KC_TRNS
 #define _______ KC_TRNS
 #define xxxxxxx KC_NO
-#define KC_BL_S #define KC_BL_S BL_STEP
+#define KC_BL_S BL_STEP
 
 #define FN_ESC LT(_FN1, KC_ESC)
 #define FN1 LT(_FN1, KC_QUOT)
 #define FN2 MO(_FN2)
 #define S___P__A__C___E KC_SPC
 
-//_______________
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -37,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		_______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, KC_MINS, KC_EQL,  KC_BSLS, _______,
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+		_______, _______, _______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, _______, _______,
 	//--------+--------+--------+--------+--------+--------.--------+--------+--------+--------+--------+--------+
 		_______, _______, _______, _______, _______,     _______,      _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY),
 

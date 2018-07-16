@@ -1,6 +1,4 @@
 #include "tomato.h"
-#include "rgblight.h"
-extern rgblight_config_t rgblight_config;
 
 #define SPC_F1 LT(1,KC_SPC)
 #define BS_F2 LT(2,KC_BSPC)
@@ -116,9 +114,6 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
 };
 
 void matrix_init_user(void) {
-  rgblight_enable();
-  rgblight_timer_init();
-  rgblight_mode(15);
 }
 
 void matrix_scan_user(void) {
