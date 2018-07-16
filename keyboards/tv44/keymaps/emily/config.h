@@ -7,6 +7,6 @@
 #ifdef BACKLIGHT_ENABLE
     #define BACKLIGHT_PIN B7
     #define BACKLIGHT_LEVELS 7
+    #define BACKLIGHT_BREATHING
 #endif
-
 #endif
