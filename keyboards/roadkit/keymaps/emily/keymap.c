@@ -22,7 +22,7 @@ extern keymap_config_t keymap_config;
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BL] = ORTHO_BIG_ENTER(
       // +--------+--------+--------+--------+
-          TO(0),   TO(1),   TO(2),   TO(3),  \
+          TO(0),   TO(1),   TO(2),   KC_F12,  \
       // +--------+--------+--------+--------+
           KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, \
       // +--------+--------+--------+--------+
@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_L1] = ORTHO_BIG_ENTER(
       // +--------+--------+--------+--------+
-          TO(0),   TO(1),   TO(2),   TO(3),  \
+          TO(0),   TO(1),   TO(2),   _______,  \
       // +--------+--------+--------+--------+
           KC_NO,   KC_NO,   KC_NO,   KC_NO, \
       // +--------+--------+--------+--------+
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_L2] = ORTHO_BIG_ENTER(
       // +--------+--------+--------+--------+
-          TO(0),   TO(1),   TO(2),   TO(3),  \
+          TO(0),   TO(1),   TO(2),   _______,  \
       // +--------+--------+--------+--------+
           KC_NO,   KC_NO,   KC_NO,   KC_NO, \
       // +--------+--------+--------+--------+
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_L3] = ORTHO_BIG_ENTER(
       // +--------+--------+--------+--------+
-          TO(0),   TO(1),   TO(2),   TO(3),  \
+          TO(0),   TO(1),   TO(2),   _______,  \
       // +--------+--------+--------+--------+
           KC_NO,   KC_NO,   KC_NO,   KC_NO, \
       // +--------+--------+--------+--------+
