@@ -4,6 +4,7 @@
 #include "../../config.h"
 
 // place overrides here
+#define TAPPING_TERM 175
 #ifdef BACKLIGHT_ENABLE
     #define BACKLIGHT_PIN B7
     #define BACKLIGHT_LEVELS 7
