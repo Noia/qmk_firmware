@@ -38,10 +38,11 @@ extern keymap_config_t keymap_config;
 
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
 
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef KEYBOARD_planck_rev6
+//
+// Rev6 has two 2U keys for enter/space, thus the bottom row is different.
+//
 	[_BL] = LAYOUT_planck_2x2u(
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
@@ -92,6 +93,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #else
 
+//
+// Rev <6/Light uses MIT layout.
+//
+
 	[_BL] = LAYOUT_planck_mit(
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
@@ -100,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC,
 	//--------+--------+--------+--------+--------+--------.--------+--------+--------+--------+--------+--------+
-		KC_LCTL, xxxxxxx, KC_LALT, KC_LGUI, KC_ENT,  S___P__A__C___E,  FN2,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT),
+		KC_LCTL, KC_LALT, FN2,     KC_LGUI, KC_ENT,  S___P__A__C___E,  FN2,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT),
 
 	[_FN1] = LAYOUT_planck_mit(
   //--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
@@ -120,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		_______, RGB_TOG, RGB_MOD, RGB_VAI, RGB_VAD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, _______, _______, RESET,
 	//--------+--------+--------+--------+--------+--------.--------+--------+--------+--------+--------+--------+
-		RESET, _______, _______, _______, _______,      _______,       _______, _______, _______, _______, _______),
+		_______, _______, _______, _______, _______,      _______,       _______, _______, _______, _______, _______),
 
 /* Adjust (Lower + Raise)
  * ,-----------------------------------------------------------------------------------.
