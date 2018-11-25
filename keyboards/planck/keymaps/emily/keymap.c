@@ -38,10 +38,10 @@ extern keymap_config_t keymap_config;
 
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
 
-#ifdef REV6_H
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
+#ifdef KEYBOARD_planck_rev6
 	[_BL] = LAYOUT_planck_2x2u(
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
@@ -90,11 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, ______________,   ______________,   _______, _______, _______, _______
 )
 
-
-};
-
 #else
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_BL] = LAYOUT_planck_mit(
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
@@ -144,6 +140,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______,      _______,      _______, _______, _______, _______, _______, _______
 )
 
-
-};
 #endif
+};
