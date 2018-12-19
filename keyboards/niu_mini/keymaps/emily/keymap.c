@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	//--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 		KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC,
 	//--------+--------+--------+--------+--------+--------.--------+--------+--------+--------+--------+--------+
-		KC_LCTL, xxxxxxx, KC_LALT, KC_LGUI, KC_ENT,  S___P__A__C___E,  FN2,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT),
+		KC_LCTL, KC_LALT, xxxxxxx, KC_LGUI, KC_ENT,  S___P__A__C___E,  FN2,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT),
 
 	[_FN1] = EMILY_ORTHO(
   //--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
