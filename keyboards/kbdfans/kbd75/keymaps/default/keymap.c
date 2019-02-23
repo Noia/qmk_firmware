@@ -20,14 +20,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,  _______,  _______,                      _______,  _______,  _______,                      _______,  _______,  _______,  _______,  _______,  _______
   ),
 };
-<<<<<<< HEAD:keyboards/kbd75/keymaps/default/keymap.c
-
-void led_set_user(uint8_t usb_led) {
-    if (usb_led & (1 << USB_LED_CAPS_LOCK)) {
-        DDRB |= (1 << 2); PORTB &= ~(1 << 2);
-    } else {
-        DDRB &= ~(1 << 2); PORTB &= ~(1 << 2);
-    }
-}
-=======
->>>>>>> master:keyboards/kbdfans/kbd75/keymaps/default/keymap.c
