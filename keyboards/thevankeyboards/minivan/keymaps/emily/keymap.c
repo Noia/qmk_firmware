@@ -1,6 +1,6 @@
-#include "tv44.h"
-#include "action_layer.h"
-#include "eeconfig.h"
+#include QMK_KEYBOARD_H
+
+extern keymap_config_t keymap_config;
 
 #define _BL 0
 #define _FN1 1
